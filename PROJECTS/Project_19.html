@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid; */
+            margin-top: 80px;
+        }
+        #nav{
+            width: 100%;
+            height: 120px;
+            border: 1px solid;
+        }
+        #search{
+            height: 50px;
+            width: 800px;
+            border: 1px solid;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        #inp{
+            margin-left: 10px;
+            height: 45px;
+            width: 300px;
+            font-size: large;
+            border: none;
+            outline: none;
+        }
+        #mag{
+            margin-top: 5px;
+            margin-left: 450px;
+            font-size: xx-large;
+        }
+        #logo{
+            height: 70px;
+            width: 70px;
+            margin-top: 3px;
+        }
+        #sale{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: medium;
+            margin-top: 40px;
+            margin-left: 460px;
+        }
+        #n1{
+            display: flex;
+            margin-left: 80px;   
+        }
+        .n{
+            margin: 3px;
+            text-decoration: none;
+            color:black ;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
+        #log{
+            margin-left: 400px;
+            font-size: xx-large;
+        }
+        #child2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 400px;
+            width: 450px;
+            /* border: 1px solid; */
+            margin-top: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .arr{
+            margin-left: 30px;
+            color: blue;
+        }
+        .head2{
+            color: blue;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #bg1{
+            height: 250px;
+            width: 450px;
+            /* border: 1px solid; */
+            background-image: url(./Image/featured-544x296-cashback_2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #bg2{
+            height: 250px;
+            width: 450px;
+            border: 1px solid;
+            background-image: url(./Image/featured-544x296-cashify_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #bg3{
+            height: 250px;
+            width: 450px;
+            border: 1px solid;
+            background-image: url(./Image/featured-544x296-printers_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #but{
+            height: 30px;
+            width: 100px;
+            border-color: blueviolet;
+            background-color: blueviolet;
+            color: whitesmoke;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transform: rotate(270deg);
+            margin-left: 400px;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <div id="nav">
+                <div style="display: flex;">
+                    <div>
+                        <img id="logo" src="./Image/hewlett-packard-logo-black-and-white.png" alt="">
+                    </div>
+                    <div id="search">
+                        <div><input type="text" name="" id="inp" placeholder="What are you looking for?"></div>
+                        <div id="mag"><i class="fa fa-search" aria-hidden="true"></i></div>
+                    </div>
+                    <span id="sale">Sales:1800-419-4962</span>
+                </div>
+                <div id="n1">
+                    <a class="n" href="#">Business Solution</a>
+                    <a class="n" href="#">Laptops</a>
+                    <a class="n" href="#">Desktops</a>
+                    <a class="n" href="#">Printers</a>
+                    <a class="n" href="#">Ink & Toner</a>
+                    <a class="n" href="#">Monitors</a>
+                    <a class="n" href="#">Accessories</a>
+                    <a class="n" href="#">Care Pack</a>
+                    <a style="margin:3px;color: red;text-decoration: none;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    " href="#">Sale</a>
+                    <a class="n" href="#">Tech Takes</a>
+                    <a class="n" href="#">Support</a>
+                    <div id="log">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="child2">
+            <div class="box">
+                <div id="bg1"></div>
+                <div id="b1">
+                    <h1 class="head">Latest & Greatest 2022</h1>
+                    <span class="head1">The best HP laptops, curated for you</span><br><br>
+                    <span class="head2">SHOP NOW</span>
+                    <span class="arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="box">
+                <div id="bg2"></div>
+                <div>
+                    <h1 class="head">LIMITED PERIOD OFFER</h1>
+                    <span class="head1">Free accessories with select ZBook purchases</span><br><br>
+                    <span class="head2">SHOP NOW</span>
+                    <span class="arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="box">
+                <div id="bg3"></div>
+                <div>
+                    <h1 class="head">DesignJet Printers</h1>
+                    <span class="head1">Easy printing with free Ink and Warranty*</span><br><br>
+                    <span class="head2">SHOP NOW</span>
+                    <span class="arr"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    <div><input id="but" type="button" value="Contact Us"></div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

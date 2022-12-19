@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating an array by using literals
+        // let arr=[true,1,null,"String"]
+        // console.log(arr);
+        // console.log(arr[2]);
+        // console.log(arr[1]);
+        // console.log(arr[4]);
+        // Mutability
+        // arr[1]=false;
+        // console.log(arr);
+        // console.log(arr.length);
+        // var arr=["Sanket",555,null]
+        // console.log(arr);
+        
+        //------------------------------------------------------------------//
+
+        // By using new keyword
+        // var arr1=new Array(1,true,null,undefined,"Sanket",{});
+        // console.log(arr1);
+        // console.log(arr1[4]);
+        // console.log(typeof arr1);
+
+        // var arr2=[{name:1},{name:2},{name:3},{name:4},function demo(){
+        //     console.log('Hi');
+        // },[true,"str"]
+        
+        // ]
+        // console.log(arr2);
+        // console.log(arr2[5]);
+        
+
+        //-------------------------------------------------------------------//
+
+        // By using constructor method
+        // var arr2=["Idli","Wada-Sambar","Dosa","Misal",1,true]
+        // console.log(arr2[2]);
+        
+        //-------------------------------------------------------------------//
+        
+        // Methods
+        // Push method: It is used to add new element from last index.
+        // Note: We can pass multiple values.
+        var arr=["Hinjawadi","Whitefield","Electronic city"]
+        // console.log(arr);
+        // console.log(arr.push("Magarpatta","Talawde",1,true,null));
+        // console.log(arr);
+
+        // Pop method:It is used to remove an element from last index. 
+        // console.log(arr.pop());
+        // console.log(arr);
+
+        // Unshift method: It is used to add new element from start index.
+        // Note: We can pass multiple values.
+        console.log(arr.unshift(1,true,{}));
+        console.log(arr);
+
+        //Shift method: It is used to remove element from start index.
+        console.log(arr.shift());
+        console.log(arr);
+
+    </script>
+</body>
+</html>

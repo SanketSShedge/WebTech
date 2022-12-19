@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #sp{
+            height: 100%;
+            width: 100%;
+            border: 1px solid;
+            background-image: url(./Image/istockphoto-1270868851-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color:violet;
+        }
+        #bg{
+            margin: 120px 100px;
+        }
+        #parent{
+            height: 500px;
+            width: 1100px;
+            display: flex;
+            margin-left: 50px;
+        }
+        #child1{
+            height: 500px;
+            width: 700px;
+            /* border: 1px solid; */
+            background-image: url(./Image/istockphoto-1270868851-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #child2{
+            height: 500px;
+            width: 700px;
+            /* border: 1px solid; */
+            background-color: white;
+        }
+        .name{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid;
+            height: 50px;
+            width: 350px;
+        }
+        #c1{
+            padding: 50px;
+            margin-left: 50px;
+        }
+        #fp{
+            margin-left: 120px;
+        }
+        #button{
+            width: 100px;
+            height: 30px;
+            background-color: chartreuse;
+            color: white;
+            border: none;
+            margin-left: 250px;
+            border-radius: 20px;
+        }
+        #fb{
+            height: 20px;
+            width: 80px;
+            background-color:steelblue;   
+            border-radius: 30px;
+            padding-left: 35px;
+        }
+        #tweet{
+            height: 20px;
+            width: 180px;
+            border-radius: 30px;
+            margin-left: 20px;
+            padding-left: 20px;
+            background-color: rgba(66, 133, 244, 0.6);
+        }
+        #sm{
+            display: flex;
+        }
+        #c{
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        #hw{
+            font-size: 115px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        #fp{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+<div id="sp">
+<div id="bg">
+    <div id="parent" >
+        <div id="child1">
+            <div id="c">
+            <span id="hw"><b>Hello World.</b></span>
+            <br>
+            <span style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima iste necessitatibus sed.</span>
+            <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: white;">Login with social media</h3>
+            <div id="sm"> 
+            <div id="fb" >
+                <a href="fb.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </div>
+            <div id="tweet" >
+                <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true">Login with Twitter</i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div id="child2">
+            <div id="c1">
+            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Login</h1>
+            <span style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Don't have an account?<a href="Gmail">Create an account.</a>it takes 
+            <br>
+            less than a minute.</span>
+            <br>
+            <br>
+            <input class="name" type="text" name="" id="" placeholder="Sanket S Shedge">
+            <br>
+            <br>
+            <input class="name" type="password" name="" id="" placeholder="********">
+            <br>
+            <br>
+            <input type="checkbox" name="" id="">Remember me 
+            <a id="fp" href="google">Forget password?</a>
+            <br>
+            <br>
+            <input id="button" type="button" value="Login">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

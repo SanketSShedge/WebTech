@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object
+        // 1.By using literals
+        // var obj={
+        //     brand:"Camlin",
+        //     color:"Black",
+        //     weight: 125
+        // }
+        // console.log(obj.color);
+        // obj.brand="Natraj";   //Object is mutable
+        // console.log(obj);
+
+        // Multiple objects using arrays 
+        // var arr=[{name: "Sonu Nigam", prof:"Singer",age:45},
+        // {name: "Himesh Reshamiya",prof:"Singer",age:55, object:{name1:"object", type:"object"}},
+        // {name:"Lata Di",prof:"Singer",age:95},
+        // {name:"Arijit Singh",prof: "Singer",age:43},
+        // {name:"Ranu Mondal",prof:"Street Singer",age:38},
+        // {name:"Asha di",prof:"Singer",age:85}]
+        // console.log(arr[4]);
+        // console.log(arr[4].name="Jubin Nautiyal");
+        // console.log(arr[4]);
+        // console.log(arr[1].object.name1);
+        
+        //  2.By using new keyword
+        // var obj=new Object()
+        // obj.name="Mahindra",
+        // obj.model="SUV 700",
+        // obj.color="Red"
+        // obj.object={name:"Tata",model:"Safari"}
+        //console.log(obj.object.name);
+        //console.log(obj.object.model="Harrier");
+        //console.log(object.obj1);
+
+        //---------------------------------------//
+        
+        //  3.By using constructor function
+        function Person(name,age,weight){
+            this.name=name
+            this.age=age
+            this.weight=weight
+        }
+        let obj=new Person("Sanket",23,63)
+        console.log(obj);
+        
+    </script>
+</body>
+</html>

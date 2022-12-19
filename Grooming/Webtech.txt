@@ -1,0 +1,84 @@
+1.What is server?
+-server is the place where all the resources are present.
+-It accepts all upcoming requests.
+-Compare to normal computer it has higher configuration.
+Ex- Google,Facebook,Amazone
+
+2.What is protocol?
+-Protocol is set of rules provided for communication.
+-Browser understandnds only HTTP/HTTPS
+-HTTP stand for hyper text transfer protocol.
+-HTTPS stand for hyper text transfer protocol secure.
+-HTTP protocol is used to share texual information.
+
+3.What is actually HTTP?
+-HTTP stands for HyperText Transfer Protocol.
+-It is a protocol used to access the data on the World Wide Web (www).
+-The HTTP protocol can be used to transfer the data in the form of plain text,
+ hypertext, audio, video, and so on.
+-HTTP is similar to the FTP as it also transfers the files from one host to another host.
+ But, HTTP is simpler than FTP as HTTP uses only one connection,
+ i.e., no control connection to transfer the files.
+
+4.What is actually HTTPS?
+-HTTPS stand for Hypertext Transfer Protocol Secure.
+-It is a secure extension or version of HTTP.
+-This protocol is mainly used for providing security to the data sent between a website and the web browser.
+-It is widely used on the internet and used for secure communications.
+-Those websites which need login credentials should use the HTTPS protocol for sending the data.
+
+5.What is Web-Browser?
+-Browser is an application used to communicate with websites.
+-Only browsers can understand web languages.
+-Different browsers contains different compilers.
+Ex- Chrom ,Mozila firefox , Microsoft edge etc.
+
+6.What is meant by request?
+-Request is a data-exchange from browser(client) to website(server).
+-Request can be send in different ways
+ 1.Typing Url
+ 2.Clicking on Hyperlink.
+ 3.Submitting responses.
+-Request can share user data.
+
+7.What is response?
+-Response is data exchange from website(server) to browser (client).
+-Response can be divided into two types.
+ 1.static
+ 2.Dynamic
+
+8.What is URL?
+-A URL(Universal Resourse Locator) is a type of uniform resource identifier and is address of a resource
+ on the World Wide Web and the protocol used to access it.
+-It is used to indicate the location of a web resource to access the web pages.
+
+9.What is www?
+-The World Wide Web is another way to describe the Internet,
+ which is a network of computers which are connected and that share
+ information and allow communication around the world
+
+10.What is webpages?
+-A document which can be display in a web browser or structure by any markup language is nothing but the webpages.
+
+11.What is Website?
+-A collection of web-pages which are grouped together and usually connected together in various ways.
+
+12.What is Web-Server?
+-A computer that hosts a website on the internet.
+
+13.What is Search-Engine?
+-A web service that helps you to find other webpages,such as Google,Bing,Yahoo etc.
+
+14.What is Internet?
+-Internet is a global network that connects billions of computers across the world
+ with each other and to the World Wide Web.
+-It uses standard internet protocol suite (IP) to connect billions of computer users worldwide.
+
+15.What is Intranet?
+-An Intranet is a private network of computers designed for a certain group of people and owned
+ by a particular firm or organization.
+
+16.What is Extranet?
+-Extranet is a part of an organization's intranet.
+-It is a communication network that is based on internet protocols (IP).
+-It provides controlled access to firm's intranet to its trading partners,customers, and other businesses.

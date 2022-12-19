@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 600px;
+            width: 380px;
+            /* border: 1px solid; */
+            border-radius: 10px;
+            margin: 0 auto;
+            background-color:aqua;
+            box-shadow: 6px 6px 6px black;
+        }
+        #img{
+            height: 100px;
+            width: 120px;
+        }
+        #button{
+            margin-top: 30px;
+            margin-left: 120px;
+            padding: 5px;
+            border-radius: 30px;
+            border: none;
+            background-color:white ;
+            color: crimson;
+            box-shadow: 4px 5px 6px blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <img id="img" src="./Image/american-1239091__340.jpg" alt="">
+        <center><h1>Pizza Form</h1></center>
+        <div id="child1">
+            <fieldset>
+            <legend>Personal Info</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First name</label></td>
+                    <td><input type="text" name="" id="fname"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last name</label></td>
+                    <td><input type="text" name="" id="lname"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="ll">Phone</label></td>
+                    <td><input type="tel" name="" id="ll"><br></td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+        <div id="child2">
+            <fieldset>
+                <legend>Pizza</legend>
+                <span>Size:</span><br>
+                <input type="radio" name="Size" id="">Small <br>
+                <input type="radio" name="Size" id="">Medium <br>
+                <input type="radio" name="Size" id="">Large <br><br>
+                Toppings (check all that apply): <br>
+                <input type="checkbox" name="" id="">Extra cheese <input type="checkbox" name="" id="">Pepperroni <input type="checkbox" name="" id="">Sausage <br>
+                <input type="checkbox" name="" id="">Mushrooms <input type="checkbox" name="" id="">Black olives <input type="checkbox" name="" id="">Green Pepper <br>
+                <input type="checkbox" name="" id="">Tomatoes <input type="checkbox" name="" id="">Onions <input type="checkbox" name="" id="">Anchovies <br>
+            </fieldset>
+        </div>
+        <input id="button" type="button" value="Enter my information">
+    </div>
+</body>
+</html>

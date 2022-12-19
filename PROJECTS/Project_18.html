@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color:darkorchid ;
+            height: 720px;
+            width: 100%;
+        }
+        #child2{
+            display: flex;
+        }
+        #nav{
+            height: 50px;
+            width: 100%;
+            border: 1px solid;
+            border: none;
+            background-color: white;
+            display: flex;
+        }
+        #logo1{
+            height: 40px;
+            width: 150px;
+            margin-left: 200px;
+            margin-top: 5px;
+        }
+        #box{
+            height: 400px;
+            width: 450px;
+            border: 1px solid;
+            margin-left: 130px;
+            padding-top: 5px;
+            border-radius: 30px;
+            border: none;
+            background-color: white;
+            align-items: center;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #img1{
+            height: 400px;
+            width: 450px;
+            margin-left: 200px;
+            margin-bottom: 80px;
+        }
+        #head{
+            margin-left: 500px;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            padding-top: 30px;
+        }
+        #del{
+            margin-left: 500px;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #head2{
+            padding-top: 10px;
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #n1{
+            margin-top: 10px;
+            margin-left: 400px;
+        }
+        .n1{
+            text-decoration: none;
+            color: grey;
+            margin: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #but1{
+            height: 30px;
+            width: 180px;
+            border-radius: 30px;
+            background-color: tomato;
+            color: whitesmoke;
+            font-size: medium;
+            border: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hr{
+            width: 150px;
+        }
+        #ent{
+            display: flex;
+            margin-left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: small;
+        }
+        #tel{
+            width: 335px;
+            height: 25px;
+        }
+        #otp{
+            background-color:blueviolet ;
+            width: 70px;
+            padding-top: 5px;
+            border-radius: 3%;
+        }
+        #sotp{
+            text-decoration: none;
+            color:white ;
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #mob{
+            display: flex;
+            margin-left: 20px;
+        }
+        .inp1{
+            width: 400px;
+            height: 25px;
+        }
+        #db{
+            width: 410px;
+            height: 30px;
+        }
+        #tn{
+            height: 25px;
+            width: 410px;
+            border: 1px solid;
+            border: none;
+            margin-left: 20px;
+            padding-top: 5px;
+            background-color: tomato;
+        }
+        #tn1{
+            text-decoration: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <div id="nav">
+                <div id="logo">
+                    <img  id="logo1" src="./Image/logo-4.png" alt="">
+                </div>
+                <div id="n1">
+                    <a class="n1" href="#">Features</a>
+                    <a class="n1" href="#">Testimonials</a>
+                    <a class="n1" href="#">FAQs</a>
+                    <a class="n1" href="#">BYJU'S advantage</a>
+                    <input class="n1" id="but1" type="button" value="Book a FREE class">
+                </div>
+            </div>
+        </div>
+        <div id="head">
+            <span><b>Tutions Redefined</b></span><br>
+        </div>
+        <p id="del">Delivering superior learning and results through a <br> unique <b>two-teacher</b> model</p>
+        <div id="child2">
+            <div id="img">
+                <img id="img1" src="./Image/Banner Image 1.png" alt="">
+            </div>
+            <div id="c1">
+                <div id="box">
+                        <h2>Book your Free Class</h2>
+                    <div id="head2">
+                        <span>Learn from India's best teachers</span>
+                    </div><br>
+                    <div id="ent">
+                        <div class="hr"> <hr> </div><div><b>Enter Your Details</b></div><div class="hr"> <hr> </div>
+                    </div><br>
+                    <div id="inp">
+                        <input class="inp1" type="text" name="" id="" placeholder="Enter Name of your Child" required><br><br>
+                        <div id="mob">
+                            <div><input type="tel" name="" id="tel" placeholder="Enter your Mobile Number" required></div><div id="otp"><a id="sotp" href="#">Send OTP</a></div>
+                        </div><br>
+                        <input class="inp1" type="email" name="" id="" placeholder="Email Address"><br><br>
+                        <select class="inp1" name="" id="db" required>
+                            <option value="" >State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select><br><br>
+                        <div id="tn"><a id="tn1" href="#"><b>Try Now</b></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

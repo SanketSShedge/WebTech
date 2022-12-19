@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+<script>
+    var x= document.getElementById('myInput')
+    function focusFunction() {
+        // focus = Changes the background color of input to yellow 
+        document.getElementById('myInput').style.backgroundColor="yellow"
+    }
+    function blurFunction() {
+        // focus = Changes the background color of input to red
+        x.style.backgroundColor="red"
+        x.style.color="white"
+        x.style.height="100px"
+        x.style.borderRadius="20px"
+        x.style.fontSize="30px"
+    }
+</script>
+</body>
+</html>

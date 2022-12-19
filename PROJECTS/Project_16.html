@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    #parent{
+        height: 100%;
+        width: 800px;
+        margin: 0 auto;
+    }
+    #child1{
+        height: 250px;
+        width: 800px;
+        background-image: url(./Image/platter-g66ab82533_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+    }
+    #child2{
+        height: 490px;
+        width: 800px;
+        border: 1px solid;
+        outline: none;
+        margin: 0 auto;
+    }
+    #nav{
+        display: flex;
+    }
+    #c1{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    #c1 a{
+        color: white;
+        text-decoration: none;
+    }
+    #c2{
+        margin-top: 10px;
+        margin-left: 200px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #c2 a{
+        color: white;
+        text-decoration: none;
+    }
+    .n1{
+        margin: 10px;
+    }
+    #zom img{
+        height: 50px;
+        width: 300px;
+        margin-left: 250px; 
+        margin-top: 30px;
+    }
+    #dis{
+        color: white;
+        margin-left: 100px;
+        margin-top: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #cont{
+        height: 30px;
+        width: 600px;
+        background-color: white;
+        margin-left: 100px;
+        display: flex;
+        border-radius: 10px;
+    }
+    #loc{
+        height: 30px;
+        width: 200px;
+        border: none;
+        outline: none;   
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: grey;
+    }
+    #sl{
+        margin-top: 5px;
+    }
+    #search{
+        height: 30px;
+        width: 300px;
+        display: flex;
+        border: none;
+    }
+    #sbar{
+        height: 28px;
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 2px;
+        outline: none;
+        border: none;
+    }
+    #mag{
+        height: 10px;
+        width: 10px;
+        color: grey;
+        margin-top: 6px;
+        margin-left: 8px;
+    }
+    #c11{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #c1 a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #box1{
+        height: 120px;
+        width: 225px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #bg1{
+        height: 80px;
+        width: 225px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: url(./Image/pexels-pixabay-461198.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+    #b1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:x-small;
+        margin-left: 10px;
+    }
+    #b1 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+    #box2{
+        height: 120px;
+        width: 225px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #bg2{
+        height: 80px;
+        width: 225px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: url(./Image/pexels-enes-çelik-7748466.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #b2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:x-small;
+        margin-left: 10px;
+    }
+    #b2 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+    #box3{
+        height: 120px;
+        width: 225px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #bg3{
+        height: 80px;
+        width: 225px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: url(./Image/pexels-sebastian-ervi-1763075.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #b3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:x-small;
+        margin-left: 10px;
+    }
+    #b3 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+    #c12{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 30px;
+    }
+    #c12 p{
+        font-size: large;
+    }
+    #h3{
+        margin-top: 30px;
+    }
+    #col{
+        display: flex;
+    }
+    #exp{
+        font-size: small;
+    }
+    #l1{
+        text-decoration: none;
+        color: red;
+        margin-left: 120px;
+        font-size: small;
+    }
+    #c13{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #box4{
+        height: 160px;
+        width: 140px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-image: url(./Image/pexels-lara-jameson-8887196.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #box5{
+        height: 160px;
+        width: 140px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-image: url(./Image/buffet-g4871360b0_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #box6{
+        height: 160px;
+        width: 140px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-image: url(./Image/pexels-pratik-gupta-2995188.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #box7{
+        height: 160px;
+        width: 140px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-image: url(./Image/pexels-chan-walrus-958545.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #c14{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #p1{
+        height: 50px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 3px;
+    }
+    #p2{
+        height: 50px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 3px;
+    }
+    #p3{
+        height: 50px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 3px;  
+    }
+    #p4{
+        height: 50px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 3px;
+    }
+    #pop{
+        margin-left: 30px;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #a1{
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #a2{
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #a3{
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #a4{
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <div id="nav">
+                <div id="c1">
+                    <a id="app" href="#"><b>Get the app</b></a>
+                </div>
+                <div id="c2">
+                    <a class="n1" href="#"><b>Investor Relations</b></a>
+                    <a class="n1" href="#"><b>Add restaurant</b></a>
+                    <a class="n1" href="#"><b>Log in</b></a>
+                    <a class="n1" href="#"><b>Sign up</b></a>
+                </div>
+            </div>
+            <div id="zom" >
+                <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+            </div>
+            <div id="dis">
+                <h1>Discover the best food and drinks in Pune</h1>
+            </div>
+            <div id="cont">
+                <div>
+                    <select name="" id="loc">
+                        <option value=""><span>Pune</span></option>
+                        <option value=""><a href="">Detect current location</a></option>
+                    </select>
+                </div>
+                <span id="sl">|</span>
+                <div id="search">
+                    <div id="mag"><i class="fa fa-search" aria-hidden="true"></i></div>
+                    <div id=""><input type="search" name="" id="sbar" placeholder="Search for a restaurant, cuisine or a dish"></div>
+                </div>
+            </div>
+        </div>
+        <div id="child2">
+        <div id="c11">
+            <div id="box1">
+                <div id="bg1"></div>
+                <div id="b1"><a href="#">Order online<br></a>Stay home and order to your doorsteps</div>
+            </div>
+            <div id="box2">
+                <div id="bg2"></div>
+                <div id="b2"><a href="#">Dinning<br></a>View the city's favourite dinning venues</div>
+            </div>
+            <div id="box3">
+                <div id="bg3"></div>
+                <div id="b3"><a href="#">Nightlife and Clubs<br></a>Explore the city's top nightlife outlets</div>
+            </div>
+        </div>
+        <div id="c12">
+            <p>Collections</p>
+            <div id="col">
+                <div id="exp">
+                    Explore curated lists of top restaurants, cafes, pubs, and bars in Pune, based on trends 
+                </div>
+                <a id="l1" href="#">All collections in Pune ></a>
+            </div>
+        </div>
+        <div id="c13">
+            <div id="box4">
+                <p style="margin-top: 100px; margin-left:10px">Navratri Special <br>
+                    <a style="text-decoration:none;color:white ;font-size:small; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" href="#">8 Places ></a>
+                </p>
+            </div>
+            <div id="box5">
+                <p style="margin-top: 100px; margin-left:10px">Traditional Thali<br>
+                    <a style="text-decoration:none;color:white ;font-size:small; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" href="#">28 Places ></a>
+                </p>
+            </div>
+            <div id="box6">
+                <p style="margin-top: 100px; margin-left:10px">Newly Opened<br>
+                    <a style="text-decoration:none;color:white ;font-size:small; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" href="#">14 Places ></a>
+                </p>
+            </div>
+            <div id="box7">
+                <p style="margin-top: 100px; margin-left:10px">Trending Today<br>
+                    <a style="text-decoration:none;color:white ;font-size:small; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" href="#">30 Places ></a>
+                </p>
+            </div>
+        </div> <br>
+        <span id="pop">Popular localities in and around Pune</span>
+        
+        <div id="c14">
+            <div id="p1">
+                <a style="text-decoration: none;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" href="#">Baner <br>461 places</a>
+                <a id="a1" href="#"> > </a>
+            </div>
+            <div id="p2">
+                <a style="text-decoration: none;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" href="#">Hinjawadi <br>616 places</a>
+                <a id="a2" href="#"> > </a>                
+            </div>
+            <div id="p3">
+                <a style="text-decoration: none;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" href="#">Wakad <br>575 places</a>
+                <a id="a3" href="#"> > </a>
+            </div>
+            <div id="p4">
+                <a style="text-decoration: none;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 30px;margin-left: 30px;margin-top: 100px;" href="#"> see more</a>
+                <a id="a4" href="#"> v </a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

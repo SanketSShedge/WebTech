@@ -1,0 +1,96 @@
+BOM
+-The Browser Object Model (BOM) in JavaScript includes the properties and methods for JavaScript to interact with the web browser.
+-BOM provides you with a window objects, for example, to show the width and height of the window. It also includes the window.screen object to show the width and height of the screen.
+ ex- <!DOCTYPE html>
+<html>
+   <body>
+      <script>
+         document.write("Screen width: " + screen.width);
+         document.write("<br>Screen width: " + screen.width);
+      </script>
+   </body>
+</html>
+
+Window inbuilt methods
+-window.alert();
+-window.confirm();
+-window.prompt();
+
+
+1.window.alert();
+-The alert() method displays analert box with specified message and ok button.
+
+Syntax: alert(message)
+
+2.window.confirm();
+-The confirm() method displays a dialog box with a specified message along with ok and cancel button.
+
+Syntax: confirm(message)
+
+3.window.prompt();
+-A prompt box is often if you want the uses to input value before entering a page.
+
+syntax: prompt("sometext","default-text");
+
+___________________________________________________________________________________
+
+#DOM(Document object model)
+
+HTML                                         DOM tree Structure
+<html>                                                HTML
+<head>                                                  |
+<title>Document</title>                          --------------
+<link ref="stylesheet">                          |             |
+</head>                                         head          body
+<body>                                           |             |
+<div>                                        ---------        div
+<h1>.....</h1>                              |         |        |
+<p>......</p>                             title    link   ------------
+</div>                                                    |           |
+</body>                                                  h1           p
+
+</html>
+
+Dom
+-When a web page is loaded,the browser creates a document object model of the page.
+-The html dom model is constructed as a tree of objects.
+-The DOM is an API that represent and interact with HTML or XML document.The DOM
+-The DOM is a document object model in the browser and representing the document as
+ a node tree when each node reperesnts part of the document.
+-The DOM is the one of the most used API on the web because it allows code running
+ in a browser to occurs and interact with every node in the document.
+
+DOM direct access
+1.console.log(document);    o/p  html file
+2.console.log(document.all); o/p htmlAllCollection
+3.let changetitle=(document.title="hello");
+4.document.contentType
+5.document.baseURL
+6.document.URL
+7.document.images
+8.document.links
+9.documnet.scripts
+10.document.forms
+11.document.stylesheet
+12.document.location
+13.document.title
+
+DOm methods()
+1.document.getElementById();
+-The document method getElementById() returns an elemet object representing the element
+ whose id property matches with specified String.Element IDs are required to be unique identification.
+
+Syntax: var element=documnet.getElementById();
+
+2.documnet.getElementByClassName();
+-The getElementByClassName method of documnet interface returns  an array-like object
+ of all child elements which have all of the given class name.
+-When called on the document object the complete document is searched ,including the root node.
+
+Syntax: var element=document.grtElementByClassName();
+
+3.document.getElementByTagName();
+-The getElementByTagName() method of document interface returns an HTMLCollection of element
+ with th given tag name.
+
+Syntax: var element=document.getElementByTagName();

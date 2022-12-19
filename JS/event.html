@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1) onclick -->
+    <!-- <div id="box">This is div box</div> -->
+    <!-- <button onclick="color()">Change</button> -->
+
+    <!-- 2)onmouseover - onmouseout -->
+    <div id="box">This is div box</div>
+    <button onmouseover="color()" onmouseout="color2()">Change</button>
+
+    <script>
+    // 1) onclick
+        var color1= document.getElementById('box').style.color="aqua";
+        var element= document.getElementById('box')
+        function color() {
+            if(color1=='aqua'){
+            element.style.height="600px"
+            element.style.width="600px"
+            element.style.borderRadius="50%"
+            element.style.backgroundColor="red"
+            element.innerHTML=Date();
+        }
+        else{
+            element.style.height="800px"
+            element.style.width="800px"
+            element.style.backgroundColor="Blue"
+            element.style.borderRadius="30px"
+        }
+    }
+    function color2() {
+        element.style.height="400px"
+        element.style.width="400px"
+        element.style.backgroundColor="Green"
+        element.style.borderRadius="50px"
+    }
+
+    </script>
+</body>
+</html>

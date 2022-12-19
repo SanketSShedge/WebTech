@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String
+        // 1) By using literals.
+        // var str="string";
+        // console.log(typeof str);
+        // var str1=`a`;                //Back-tick
+        // console.log(typeof str1);
+        // var str3=`string2`;
+        // console.log(typeof str3);
+
+        // 2) By using new keyword.
+        // var str4=new String("Hello")
+        // console.log(typeof str4);
+        // var str5=new String("World");
+        // console.log(typeof str5);
+
+        //===============================================================================//
+
+        // String methods
+        // Slice: It is used to split the string into fragments.
+        // var str4="Java script";
+        // console.log(str4.slice(0,4));        //Slice(lower range,higher range)
+        // console.log(str4.slice(-4));
+
+        //-------------------------------------------------------------------------------//
+
+        // Length: It is used to identify length of string.
+        // console.log(str4.length);
+
+        //-------------------------------------------------------------------------------//
+
+        //indexOf: It is uswd to get an imdex of particular character.
+        // console.log(str4.indexOf("a"));
+
+        //-------------------------------------------------------------------------------//
+
+        //toLowerCase: It is used to convert from uppercase to lowercase.
+        // var str5="LOWERCASE";
+        // console.log(str5.toLowerCase());
+
+        //-------------------------------------------------------------------------------//
+
+        //toUpperCase: It is used to convert from lowercase to uppercase.
+        // var str6="uppercase";
+        // console.log(str6.toUpperCase());
+
+        //--------------------------------------------------------------------------------//
+
+        //charAt(): It is uswd to get a cahracter of particular index.
+        // console.log(str6.charAt(3));
+
+        //---------------------------------------------------------------------------------//
+
+        //concat: It is used to combine two strings.
+        // var con="con";
+        // var cat="cat";
+        // console.log(con+cat);
+        // console.log(con.concat(cat));
+
+        //----------------------------------------------------------------------------------//
+
+        //repeat: It is used to repeat the string.
+        var rep="Mumbai to Goa";
+        // console.log(rep.repeat(5));
+
+        //----------------------------------------------------------------------------------//
+
+        //replace: It is used to replace the string.
+        // console.log(rep.replace("Mumbai","Pune"));             //rep.replace(given string, replace string)
+
+        //----------------------------------------------------------------------------------//
+
+        //endsWith(): It is used to check string ends with given character or not.
+        // console.log(rep.endsWith("A"));              //Boolean
+
+        //----------------------------------------------------------------------------------//
+
+        //startsWith(): It is used to check string starts with given character or not.
+        // console.log(rep.startsWith("P"));
+
+        //----------------------------------------------------------------------------------//
+        
+        //substring():
+        console.log(rep.substring(0,6));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid; */
+            box-shadow: 0px 0px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #child1{
+            height: 45px;
+            width: 200px;
+            background-image: url(./Image/WhatsApp\ Image\ 2022-09-29\ at\ 12.33.35\ PM.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #child2{
+            width: 600px;
+            height: 50px;
+            margin-right: 20px;
+            display: flex;  
+            justify-content: space-around;
+            align-items: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #h1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: grey;
+            font-size: xxx-large;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        .buy{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #pay{
+            height: 50px;
+            width: 250px;
+            margin-left: 630px;
+            text-align: center;
+            padding-bottom: 5px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background-color: lightsalmon;
+        }
+        #l1 a{
+            color: black;
+            margin: 10px;
+        }
+        #brc{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #add{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #rad{
+            height: 50px;
+            width: 800px;
+            padding-top: 10px;
+            border: 1px solid;
+            margin-left: 350px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }  
+        .buy{
+            text-align: center;
+            padding-top: 15px;
+            font-size: medium;
+        }
+        #loc{
+            height: 50px;
+            width: 250px;
+        }
+        #s1{
+            height: 50px;
+            width: 150px;
+            font-size: large;
+        }
+        #sbar{
+            height: 50px;
+            width: 150px;
+            border: 1px solid;
+            font-size: large;
+            background-color: red;
+            color: white;
+        } 
+        #search{
+            font-size: larger;
+            background-color: red;
+            color: white;
+            border: red;
+            margin-top: 10px;
+        }
+        #mag{
+            margin-left: 30px;
+        }
+        #search:hover{
+            height: 50px;
+            width: 150px;
+            font-size: larger;
+            background-color:crimson;
+            border-color: crimson;
+            color: white;
+        }
+        .at{
+            height: 30px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #box1{
+            height: 30px;
+            width: 110px;
+            border: 1px solid;
+        }
+        #box2{
+            height: 30px;
+            width: 110px;
+            border: 1px solid;
+        }
+        #box3{
+            height: 30px;
+            width: 180px;
+            background-color:#007a6f ;
+        }
+        #box4{
+            height: 30px;
+            width: 70px;
+        }
+        #box5{
+            height: 30px;
+            width: 60px;
+        }
+        #box6{
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+        </div>
+        <div id="child2">
+            <div id="box1"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="" style="color: black; text-decoration: none;">My Bookings</a></div>
+            <div id="box2"><i class="fa fa-credit-card " aria-hidden="true"></i><a href="" style="color: black; text-decoration: none;">| Pay Rent</a></div>
+            <div id="box3"><a href="" style="color: whitesmoke;text-decoration: none; padding: 5px 5px 5px 5px;">For Property owners</a></div>
+            <div id="box4"><a href="" style="color: black;text-decoration: none">Sign Up</a></div>
+            <div id="box5"><a href="" style="color: black;text-decoration: none">Log In</a></div>
+            <div id="box6"><i class="fa fa-bars" aria-hidden="true"></i><a href="" style="color: black;text-decoration: none">Menu</a></div>
+        </div>
+    </div>
+    <div id="h1">
+        <span>World's Largest NoBrokerage Property Site</span>
+    </div><br>
+    <div id="pay">
+        <p id="l1"><i class="fa fa-eur" aria-hidden="true"></i><a href="#">Pay rent</a>with Credit Card!</i></p>
+    </div><br><br>
+
+    <div id="brc">
+        <div class="buy">Buy</div><div class="buy">Rent</div><div class="buy">Commercials</div>
+    </div>
+
+    <div id="add">
+        <select name="" id="s1"><option value="Pune" selected>Pune</option><option value="Mumbai">Mumbai</option><option value="Nagpur">Nagpur</option><option value="Kolhapur">Kolhapur</option><option value="Beed">Beed</option>
+        </select>
+        <input id="loc" type="text" placeholder="Search upto 3 localities or landmarks"><div id="sbar"><i id="mag" class="fa fa-search" aria-hidden="true"></i><input id="search" type="button" value="Search"></div>
+    </div>
+
+    <div id="rad">
+        <input type="radio" name="rad" id="" ><span>Full House</span> 
+        <input type="radio" name="rad" id=""><span>PG/Hostel</span> 
+        <input type="radio" name="rad" id=""><span>Flatmates</span>  
+        <select name="" id="" class="at"><option value="" selected>Apartment type</option><option value="">1 RK</option><option value="">1 BHK</option><option value="">2 BHK</option><option value="">3 BHK</option>
+            <option value="">4 BHK</option><option value="">4+ BHK</option>
+        </select> 
+        <select name="" id="" class="at" ><option value="" selected>Availability</option><option value="">Immediate</option><option value="">Within 15 days</option><option value="">Within 30 days</option>
+            <option value="">After 30 days</option>
+        </select>
+    </div>
+    <div style="display: flex; position: relative; left: 620px; top: 50px; ;">
+        <div style="height: 30px; width: 50px; margin-right: 12px; "><hr></div>
+        <a href="#" style="text-decoration: none; color: black;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Are you a Property Owner?</a>
+        <div style="height: 30px; width: 50px; margin-left: 12px;"><hr></div>
+    </div>
+    <div style="height: 40px;width: 180px;background-color: #169b6a; display: flex; justify-content: center; align-items: center; position: relative;left: 680px; top: 50px;">
+        <a href="#" style="text-decoration: none; color: white;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Post Free Property ad</a>
+    </div>
+</body>
+</html>

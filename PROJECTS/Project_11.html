@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 380px;
+            margin: 200px auto;
+        }
+        #field{
+            background-color: aquamarine;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 4px 5px 6px black;
+        }
+        .c1{
+            border: none;
+            box-shadow: 2px 2px 2px black;
+        }
+        #last{
+            width: 162px;
+            margin-left: 3px;
+        }
+        .c2{
+            width: 333px;
+            border: none;
+            box-shadow: 2px 2px 2px black;
+        }
+        #sb{
+            width: 333px;
+            height: 50px;
+            border: none;
+            box-shadow: 2px 2px 2px black;
+        }
+        #sub{
+            background-color: red;
+            color: white;
+            border: none;
+            box-shadow: 2px 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <fieldset id="field">
+            <legend><h2>Register</h2></legend>
+        <div id="child1">
+            <label for="">Name:</label><br>
+            <input class="c1" type="text" name="" id="" placeholder="First"><input class="c1" type="text" name="" id="last" placeholder="Last"><br>
+        </div>
+        <div id="child2">
+            <label for="">Username:</label><br>
+            <input class="c2" type="text" name="" id=""><br>
+            <label for="">Email</label><br>
+            <input class="c2" type="text" name="" id=""><br>
+            <label for="">Password:</label><br>
+            <input class="c2" type="text" name="" id=""><br>
+            <label for="">Short Bio</label><br>
+            <input type="text" name="" id="sb"><br>
+            <span>share a little information about yourself</span><br>
+            <input id="sub" type="button" value="Submit">
+        </div>
+        </fieldset>
+    </div>
+</body>
+</html>

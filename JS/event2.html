@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid;
+            background-color: yellow;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- // 5) onchange -->
+    <select name="" id="car" onchange="fun()">
+        <option class="op" value="MERCEDES">MERCEDES</option>
+        <option class="op" value="LAMBORGINI">LAMBORGINI</option>
+        <option class="op" value="AUDI">AUDI</option>
+        <option class="op" value="LAND ROVER">LAND ROVER</option>
+    </select>
+    <h1 id="demo"></h1>
+    <script>
+        function fun() {
+            var select= document.getElementById('car').value
+            var select1= document.getElementsByClassName('op')
+            var box= document.getElementById('demo')
+            box.innerHTML="CONGRATULATIONS you won the car is "+select;
+            box.style.backgroundImage=""
+        }
+    </script>
+</body>
+</html>

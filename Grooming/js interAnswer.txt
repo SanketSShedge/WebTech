@@ -1,0 +1,358 @@
+1.what is js?
+ans- js is scripting language.it is different from java language.It is object based,lightweight.
+It is widely used for client side validation.
+
+2.List some of the js features?
+ans-1.lightweight
+2.Interpreted language
+3.open source
+4.Dynamic typed language
+
+3.Who developed JavaScript, and what was the first name of JavaScript?
+ans-js was developed by Brendan Eich, who was a netscape programmer.breanden Eich developed this new scripting language
+in just ten days in year september 1995.At that time of its launch,js was initially called 
+MOCHA.After that it was called live script later known as javascript.
+ 
+4.List some of the advantages of JavaScript.
+ans- a.Js is lightweight (less cpu uses)
+b.Server interaction is less.
+c.Inetactivity is high.
+d.Interfaces are richer
+
+5.List some of the disadvantages of JavaScript.
+ans-a.it is not supporting multithreading
+b.It is not supporting multiprocessing
+c.Reading and writing of files is not allowed.
+d.It is weakly typed language.
+
+6.Define a named function in JavaScript.
+ans- The function which has named at the time of defination is called named function
+
+syntax:
+   function demo(){
+}
+demo()//function called statement
+
+7.Define anonymous function
+ans- The function that has no name.These functions are declared dynamically at runtime using function operator instead
+of the function declaration.The function operator is more flexible than a function declaration.
+It can be easily used in the place of an expression.
+Syntax:
+
+ var anno=function(){
+} anno();//function caller
+
+
+8.Can an anonymous function be assigned to a variable?
+ans-yes, you can assign an anonymous fucntion to a variable
+ex-
+ var anno=function(){
+} anno();//function caller
+
+9.In JavaScript what is an argument object?
+ans-The variables of js represents the arguments that are passed to a function.
+
+10.If we want to return the character from a specific index which method is used?
+ans- the js string charAt(index) method is used to find out a char value present at thr specidfic
+index.the index starts from o and goes to n-1,where n is the length of the string.
+the index value cant be a negative,greater than or equal to length of the string.
+
+11.What is the difference between JavaScript and JScript?
+ans- Netscape provided the javascript language.
+Microsoft changed the name and called it Jscript to avoid the trademark issue.
+In other words you can say jscript is the same as javascript but microsoft provided it.
+
+12.What are the key differences between Java and JavaScript? / How is JavaScript different from Java?
+ans-java 
+1.java is a complete and strongly typed programming language and it is used for backend coding.
+2.Java is an Object oriented programming language(OOPS)
+3.java creates applications that can run in any virtual machne(JVM) 
+4.The java code needs to be compiled.
+5.Java is complete standalone language that can be used in backend coding.
+6.java supports multithreading
+7.java consumes more memory.
+
+js
+1.js is a weakly typed,lighweight programming language(most commonly called as scripting language)
+and has more relaxed syntax and rules.
+2.js is client side scripting language, and it doesn't fully support the OOPS concept.
+3.js code can run only in the browser,but it can now run on the server via Node.js.
+4.the js code doesnt require to be compiled.
+5.js is assigned within a web page and integrated with its HTML content.
+7.js is not supporting multithreading.
+8.js code is used in HTML web pages and require less memory.
+
+
+13.How to use external JavaScript file?
+ans- step no 1 we need to create one js file with help of js extension ex- index.js
+  link this file with script attribute as src and link.
+   <script src="./index.js">
+
+14.Is JavaScript case sensitive language?
+ans - yes, js is case sensitive language.
+
+15.why js is weakly typed language?
+ans-the js is weakly typed language why because it will accepts any datatype in var ,let and const no need to defined specific datatypes.
+
+16.what are the difference between weakly typed and strongly typed language?
+ans- strongly typed
+a. variable/exression must have type
+b.Type should be matches with the data.
+c.Java,c#
+
+weakly typed
+a.no types required
+b.variable are just alises memory allocation.
+c.js etc
+
+17.Why js is lightweight language?
+ans - Very less memory uses that why it is called as lightweight language.
+
+18.Can we passed multiple objects in js array?
+ans- yes , we can passed multiple objects in js array.
+
+19.What are all the difference between Let,var and const?
+ans - Prefer the chart which is given in js notes
+
+20.What is hoisting?
+Ans-Hoisting
+Js allows a programmer to use a member (variable) before the declaration statement. This characteristic is known as
+hoisting.
+What makes js hoisting?
+It runs js in 2 phases
+1. Allocates memory variables and assign value(undefined)
+2. Instruction get executed (top to bottom).
+Since the declaration is already done we can use.
+Understanding execution in js
+
+i. Global execution context is a block of memory
+Variable
+area
+
+Functional area /
+Execution area
+
+The global execution context has 2 parts
+ii. Variable area.
+iii. Functional area or execution area.
+
+JS engine generally uses 2 phases to execute a js code
+i.Phase 1 : all the memory is allocated for the declaration in top to bottom order and assigned with the
+default value undefined in variable area of global execution context.
+
+ii.Phase 2 : all the instruction get executed in top to bottom order in execution area of global execution
+context.
+
+21.What is BOM?
+ans - BOM stands for Browser object model.it provides interaction with the browser.The default object of a
+browser is window.So, you can call all the functions of the window by specifying the window or directly.The window
+object provides various properties like document,history,screen,navigator,location,innerHTML,innerWidth.
+
+22.What the DOM ? What are all the uses?
+ans-DOM stands for document object model
+A document is a object created by browser
+The document object is the root node of DOM Tree.
+Every html elements is considered as node (js object) in DOM.
+DOM allows to modify the document content rendered by the browser without reloading the page.
+Therefore DOM helps to make a web page dynamic .
+
+Note : any modification done using DOM is not updated to the original HTML page therefore once we
+reload a page all the modification done using DOM will be lost.
+
+We can write content on browser page dynamically with the help of write and writeln method of
+document object.
+Example : to display a message on the browser page from the js code.
+
+23.What is window object?
+ans- the window object is created automatically by the browser that represents a window of a
+browser.It is not an object of js,it is a browser object.
+
+The window object is used to display the popup dialog box.
+
+ex-
+window.alert("below 18+ are not allowed to access this website")//alert popup
+    // window.confirm("are you 18+ ?");//confirmation popup
+    window.prompt("enter your usename")//user input popup
+    window.confirm("are you 18+ ?")
+
+24.How to write a comment in JavaScript?
+ans- by using two // we can comment js code
+
+25.How to create a function in JavaScript?
+ans - to create function in js we have standard syntax
+
+function name(params){
+   instruction
+} name()//caller
+
+26.What are the different data types present in JavaScript?
+ans-1.primitive
+    2.non-primitive
+
+1.primitive
+ a.number() we can store all types of number data or represents numeric values
+ b.string- it is used to store sequence character.
+ c.boolean - The boolean data type is used to represent a boolean values like true and false
+         true hold value 1 and false hold value 0
+ d.udefined- If you are not defined any value to any datatypes it considered as undefined.
+ e.null-The null data type is used to represent a non-existent, null,or a invalid value.
+
+2.non-primitive
+ a.array
+ b.object
+
+27.What is the difference between == and ===?
+ans- The == operator is used to check equality only whereas === checks equality, and alongwith its datatype.
+
+28.How to write HTML code dynamically using JavaScript?
+
+ans- document.getElementById('myLocation').innerHTML="Dynamic html content by using js"
+    
+29.How to create objects in JavaScript?
+ans- 1.By using object literals
+     2.by using new keyword
+     3.By using object Constructor.
+
+We can can create an object by using  3 ways 
+
+1.By using literals
+-Create a single object , using an object literals
+
+Syntax: var obj={
+                    color:"white",
+                    width:123,
+                 }
+
+2.create an object by using new keyword
+-Create a single object ,using new keyword.
+ 
+Syntax: var obj1=new Object();
+
+3.create an object by using constructor function
+
+
+Syntax:
+         function person(name,age,sal){
+          this.name=name;
+          this.age=age;
+          this.sal=sal;
+} 
+
+
+
+30.What is js array and ways to create an array?
+ans- Array is a block of memory which is used to store multiple values of hetrogeneous type .
+
+
+Creation of arrays
+In js array is an object.
+We can create array object in three different ways.
+1.	Using array literal.
+a.	Syntax
+let arr = [value1, value2,	];
+
+Eg:
+
+let arr = [10,20,30]; console.log(typeof arr);
+
+2.	By creating an instance of array using new operator.
+
+let arr2 = new Array();
+   
+
+3.	By using an Array constructor
+
+let arr = new Array(10,20,30);
+
+
+31.What does the isNaN() function?
+ans-The isNaN() function returns true if the variable value is not a number.
+
+function number(num){
+
+ if(isNaN(num)){
+   
+return "not a number";
+}
+return "Number"
+}
+  console.log(number("1000F"));
+ 
+//expexted output  : "Not a number"
+
+console.log(number("1000"));
+
+//expected output :"number"
+
+
+32.Difference between Client side JavaScript and Server side JavaScript?
+
+ans- client-side-js: The client side js is embedded directly by in the html pages.The 
+browser interpret this script at runtime.
+
+Server-side-js: It is also resembles client-side js.It has a relevant js which is to run in a server.
+The server-side js are deployed aonly after compilation.
+
+33.What is the difference between undefined value and null value?
+ans-1undefined value: A value that is not defined and has no keyword is known as undefined.
+ 
+ex-  var undefined;//undefined
+
+2.null value: A value that is explicitly specified by the keyword "null" is know as null value.
+
+ex- String str=null;// str has a null value
+
+34.What are the pop-up boxes available in JavaScript?
+
+ans-   The window object is used to display the popup dialog box.
+
+ex-
+window.alert("below 18+ are not allowed to access this website")//alert popup
+    // window.confirm("are you 18+ ?");//confirmation popup
+    window.prompt("enter your usename")//user input popup
+    window.confirm("are you 18+ ?")
+   
+35.What is this keyword in JavaScript?
+
+ans- The this keyword is a reference variable that referes to the current object.
+
+var address={
+company:"javascript",
+state:"MH",
+city:"Pune"
+
+fullAdress:function(){
+
+return this.company+" "+this.city+" "+this.state;
+}
+};
+var fetch=address.fullAdress();
+
+document.writeln(fetch);
+
+36.What is the requirement of debugging in JavaScript?
+ans- js didnt show any error message in a browser.However, these mistakes can affect
+the output.The best practice to find out the error is to debug the code.The code can be debugged
+ easily by using web browsers like Google chrome,Mozila firefox
+to perform debugging
+a.using console.log()
+b.using debugger keyword
+
+37.What is the use of Math object in JavaScript?
+ans-The js math object provides several constants and methods to perform a mathematical operation.
+
+
+38.What is the use of a Date object in JavaScript?
+ans- The js date object can be used to get a year,month and day.You can display a timer on the
+webpage by the help of js date object.
+
+39.What is dynamic typed language?
+ans-Dynamically typed language is nothing but the where the interepreter assigns varibles 
+a type at runtime based on the variable's value at the time 
+ex.js
+
+
+
+
+
+
